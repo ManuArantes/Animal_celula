@@ -79,8 +79,8 @@ article#conteudo{
    text-align: center;
 }
 #img_estrutura{
-    width: 600px; /* Define uma largura fixa */
-    height: 500px; /* Define uma altura fixa */
+    width: 400px; /* Define uma largura fixa */
+    height: 300px; /* Define uma altura fixa */
 }  
 #li_paragrafo_dis_maior{
     height: 65px;
