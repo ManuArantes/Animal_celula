@@ -64,11 +64,12 @@ article#conteudo{
     display: flex; /* Ativa o Flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente (se o contêiner tiver altura) */
-    height: 100vh; /* Define a altura do contêiner, se necessário */
+    
+    max-width: 2;
 }
 #li_titulo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 28px;
+    height: 1.7rem;
     color:#0026ff;
 }
 #li_paragrafo{
@@ -76,11 +77,11 @@ article#conteudo{
 }
 #rodape{
     margin-top: 30px;
-   text-align: center;
+    text-align: center;
 }
 #img_estrutura{
-    width: 400px; /* Define uma largura fixa */
-    height: 300px; /* Define uma altura fixa */
+    width: 600px; /* Define uma largura fixa */
+    height: 500px; /* Define uma altura fixa */
 }  
 #li_paragrafo_dis_maior{
     height: 65px;
