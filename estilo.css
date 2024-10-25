@@ -64,6 +64,7 @@ article#conteudo{
     display: flex; /* Ativa o Flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente (se o contêiner tiver altura) */
+    height: 100vh; /* Define a altura do contêiner, se necessário */
 }
 #li_titulo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
