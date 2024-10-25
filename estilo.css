@@ -1,111 +1,102 @@
-/* Estilo Todas as páginas */
-body {
+/*Estilo Todas as páginas*/
+
+body{
     background-color: #f0f0f0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
+}
 header {
-    width: 100%;
-    max-width: 1280px; /* Limite máximo */
-    height: auto; /* Altura automática */
-    background-color: #0bb3e6;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    border: 3px solid #b6eeff;
+    width: 1280px; /* Largura do cabeçalho */
+    height: 150px; /* Altura do cabeçalho */
+    background-color:  #0bb3e6;/* Cor de fundo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 0px auto; /* Centraliza o cabeçalho na página */
+    border: 3px solid #b6eeff; /* Borda do cabeçalho */
     color: #000000;
 }
-
-#menu {
+#menu{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: center;
 }
-
-#menu a {
+#menu a{
     padding: 10px;
-    margin-left: 10px; /* Corrigido de 100p para 10px */
+    margin-left: 100p;
     text-decoration: none;
     color: #ffffff;
     border-radius: 100px;
     text-align: center;
 }
-
-#menu a:hover {
-    background-color: #48c9f0b9;
+#menu a:hover{
+    background-color:#48c9f0b9;
     color: #000000;
     text-decoration: underline;
 }
-
-h1, h2 {
+h1,h2{
     text-align: center;
     color: #000000;
 }
-
-#topicos {
+#topicos{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 2px;
     text-align: center;
-    background-color: #05b4e9;
+    background-color:#05b4e9 ;
 }
-
-img {
-    width: 100%; /* Imagem ocupa 100% do contêiner */
-    height: auto; /* Altura automática para manter a proporção */
-}
-
-#conteudo section {
-    width: 100%; /* Seções ocupam 100% da largura */
-    max-width: 3000px; /* Limite máximo */
+img{
+    width: 400px; /* Define uma largura fixa */
+    height: 350px; /* Define uma altura fixa */
+}  
+#conteudo section{
+    width: 3000px;
     border: 2px solid #0b7797;
     padding: 20px;
 }
-
-article#conteudo {
+article#conteudo{
+  
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
+} 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se o contêiner tiver altura) */
+    height: 100vh; /* Define a altura do contêiner, se necessário */
 }
-
-#li_titulo {
+#li_titulo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 28px;
-    color: #0026ff;
+    color:#0026ff;
 }
-
-#li_paragrafo {
+#li_paragrafo{
     height: 45px;
 }
-
-#rodape {
+#rodape{
     margin-top: 30px;
-    text-align: center;
+   text-align: center;
 }
-
-#img_estrutura {
-    width: 80%; /* Imagem ocupa 100% do contêiner */
-    height: auto; /* Altura automática */
-}
-
-#li_paragrafo_dis_maior {
+#img_estrutura{
+    width: 400px; /* Define uma largura fixa */
+    height: 300px; /* Define uma altura fixa */
+}  
+#li_paragrafo_dis_maior{
     height: 65px;
-}
-
-#link {
+}   
+#link{
     text-align: center;
 }
 
-/* Responsividade */
+/*Responsividade*/
+
+/* Para telas pequenas (smartphones) */
 @media (max-width: 600px) {
+    header {
+        width: 100%; /* Cabeçalho ocupa 100% da largura */
+        height: auto; /* Altura automática */
+    }
     #menu {
         flex-direction: column; /* Altera a direção do menu */
     }
@@ -113,17 +104,43 @@ article#conteudo {
         margin-left: 0; /* Remove a margem à esquerda */
         padding: 8px; /* Ajusta o padding */
     }
+    img {
+        width: 100%; /* Imagem ocupa 100% do contêiner */
+        height: auto; /* Altura automática para manter a proporção */
+    }
+    #conteudo section {
+        width: 100%; /* Seções ocupam 100% da largura */
+        padding: 10px; /* Ajusta o padding */
+    }
     article#conteudo {
         flex-direction: column; /* Alinha artigos verticalmente */
     }
 }
 
+/* Para telas médias (tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
+    header {
+        width: 100%; /* Cabeçalho ocupa 100% da largura */
+        height: auto; /* Altura automática */
+    }
     #menu a {
         margin-left: 20px; /* Margem reduzida */
     }
+    img {
+        width: 80%; /* Imagem ocupa 80% do contêiner */
+        height: auto; /* Altura automática */
+    }
+    #conteudo section {
+        width: 100%; /* Seções ocupam 100% da largura */
+    }
 }
 
+/* Para telas grandes (desktops) */
 @media (min-width: 901px) {
-    /* Para telas grandes */
+    header {
+        width: 1280px; /* Mantém a largura original */
+    }
+    #conteudo section {
+        width: 3000px; /* Mantém a largura original */
+    }
 }
