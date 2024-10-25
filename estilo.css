@@ -92,7 +92,7 @@ article#conteudo {
 }
 
 #img_estrutura {
-    width: 100%; /* Imagem ocupa 100% do contêiner */
+    width: 80%; /* Imagem ocupa 100% do contêiner */
     height: auto; /* Altura automática */
 }
 
