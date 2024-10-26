@@ -48,7 +48,7 @@ h1, h2 {
 }
 
 #topicos {
-    /* Tinha um font-family aqui, mas o font-family que está no body já é o suficiente*/
+   
     padding: 10px;
     text-align: center;
     background-color: #05b4e9;
